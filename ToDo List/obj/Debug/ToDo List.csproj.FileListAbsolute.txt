@@ -1,0 +1,56 @@
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\ToDo List.dll.config
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\ToDo List.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\ToDo List.pdb
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\csc.exe
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\csc.exe.config
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\csc.rsp
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\csi.exe
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\csi.rsp
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\System.AppContext.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\vbc.exe
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\vbc.exe.config
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\vbc.rsp
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\VBCSCompiler.exe
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Antlr3.Runtime.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\AspNet.ScriptManager.bootstrap.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\AspNet.ScriptManager.jQuery.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.ScriptManager.MSAjax.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.ScriptManager.WebForms.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Newtonsoft.Json.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\System.Web.Optimization.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\WebGrease.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\System.Web.Optimization.xml
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Newtonsoft.Json.xml
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Antlr3.Runtime.pdb
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\pt-br\Microsoft.AspNet.FriendlyUrls.resources.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\obj\Debug\ToDo List.csprojAssemblyReference.cache
+C:\Users\renan\source\repos\ToDo List\ToDo List\obj\Debug\ToDo List.csproj.CopyComplete
+C:\Users\renan\source\repos\ToDo List\ToDo List\obj\Debug\ToDo List.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\obj\Debug\ToDo List.pdb
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\EntityFramework.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\EntityFramework.SqlServer.dll
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\EntityFramework.xml
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\EntityFramework.SqlServer.xml

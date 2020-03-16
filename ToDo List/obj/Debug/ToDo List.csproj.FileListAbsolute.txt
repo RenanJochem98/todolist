@@ -28,7 +28,6 @@ C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\vbc.rsp
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\VBCSCompiler.exe
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Antlr3.Runtime.dll
-C:\Users\renan\source\repos\ToDo List\ToDo List\bin\AspNet.ScriptManager.bootstrap.dll
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\AspNet.ScriptManager.jQuery.dll
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.AspNet.FriendlyUrls.dll
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll
@@ -54,3 +53,4 @@ C:\Users\renan\source\repos\ToDo List\ToDo List\bin\EntityFramework.dll
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\EntityFramework.SqlServer.dll
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\EntityFramework.xml
 C:\Users\renan\source\repos\ToDo List\ToDo List\bin\EntityFramework.SqlServer.xml
+C:\Users\renan\source\repos\ToDo List\ToDo List\bin\AspNet.ScriptManager.bootstrap.dll

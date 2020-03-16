@@ -38,7 +38,7 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
+        <script src="https://kit.fontawesome.com/eb1e09fda1.js" crossorigin="anonymous"></script>
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">

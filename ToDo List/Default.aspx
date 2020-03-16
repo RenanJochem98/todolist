@@ -15,13 +15,12 @@
                             </div>
                             <div class="col-lg-1 col-md-3 offset-lg-4 text-right">
                                 <asp:LinkButton ID="atualizaItem" CssClass="btn btn-success circle" runat="server" OnClick="atualizar" CommandName="<%# Item.ItemId %>">
-                                    I
-                                    <!--<span class="glyphicon glyphicon-remove-circle">X</span> -->
+                                    <i class="fas fa-edit fa-1x"></i>
                                 </asp:LinkButton>
                             </div>
-                            <div class="col-lg-1 col-md-3  text-right">
+                            <div class="col-lg-1 col-md-3">
                                 <asp:LinkButton ID="removeItem" CssClass="btn btn-danger circle" runat="server" OnClick="remover" CommandName="<%# Item.ItemId %>">
-                                    x
+                                    <i class="fas fa-trash-alt"></i>
                                     <!--<span class="glyphicon glyphicon-remove-circle">X</span> -->
                                 </asp:LinkButton>
                             </div>
@@ -35,7 +34,7 @@
              <div class="row mt-5">
                 <asp:TextBox ID="nome" CssClass="col-lg-6 text-center" BorderStyle="None" runat="server" Width="40" placeholder="Adicione uma nova tarefa"></asp:TextBox>
                 <asp:LinkButton CssClass="btn btn-primary col-lg-1 offset-lg-5 text-right circle" runat="server" OnClick="teste" >
-                    +
+                    <i class="fas fa-plus-circle"></i>
                 </asp:LinkButton>
              </div>
         </div>

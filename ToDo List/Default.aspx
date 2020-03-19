@@ -5,7 +5,9 @@
         <div class="card col-lg-6 offset-lg-3">
             <asp:ListView id="itens" runat="server" ItemType="ToDo_List.Models.Item" SelectMethod="getItens" DataKeyNames="ItemId">
                 <EmptyDataTemplate>
-                    Não retornou nada ;(
+                    <div class="font-weight-bold text-center p-3 mt-5">
+                        Não existe nenhum item pendente na sua lista
+                    </div>
                 </EmptyDataTemplate>
                 <ItemTemplate>
                         <div class="row p-1">

@@ -8,18 +8,18 @@
                     Não retornou nada ;(
                 </EmptyDataTemplate>
                 <ItemTemplate>
-                        <div class="row">
-                            <div class="col-lg-1 col-md-6 p-2 font-weight-bold text-center small"><%# Container.DisplayIndex+1 %>.</div>
-                            <div class="col-lg-5 col-md-6 p-2 ">
+                        <div class="row p-1">
+                            <div class="col-lg-1 col-md-6 font-weight-bold"><%# Container.DisplayIndex+1 %>.</div>
+                            <div class="col-lg-5 col-md-6">
                                  <asp:TextBox ID="txtAtualizaNome" CssClass="font-weight-bold text-center"  BorderStyle="None" runat="server" Text="<%# Item.Nome %>"></asp:TextBox>
                             </div>
-                            <div class="col-lg-1 col-md-3 offset-lg-4 text-right">
-                                <asp:LinkButton ID="atualizaItem" CssClass="btn btn-success circle" runat="server" OnClick="btnAtualizaOnClick" CommandName="<%# Item.ItemId %>">
+                            <div class="col-lg-1 col-md-3 offset-lg-4">
+                                <asp:LinkButton ID="atualizaItem" CssClass="btn btn-success btn-sm mx-1" runat="server" OnClick="btnAtualizaOnClick" CommandName="<%# Item.ItemId %>">
                                     <i class="fas fa-edit fa-1x"></i>
                                 </asp:LinkButton>
                             </div>
                             <div class="col-lg-1 col-md-3">
-                                <asp:LinkButton ID="lkBtnRemoveItem" CssClass="btn btn-danger circle" runat="server" OnClick="btnRemoverOnClick" CommandName="<%# Item.ItemId %>">
+                                <asp:LinkButton ID="lkBtnRemoveItem" CssClass="btn btn-danger btn-sm mx-1" runat="server" OnClick="btnRemoverOnClick" CommandName="<%# Item.ItemId %>">
                                     <i class="fas fa-trash-alt"></i>
                                     <!--<span class="glyphicon glyphicon-remove-circle">X</span> -->
                                 </asp:LinkButton>
@@ -33,12 +33,10 @@
             </asp:ListView>
              <div class="row mt-5">
                 <asp:TextBox ID="nome" CssClass="col-lg-6 text-center" BorderStyle="None" runat="server" Width="40" placeholder="Adicione uma nova tarefa"></asp:TextBox>
-                <asp:LinkButton CssClass="btn btn-primary col-lg-1 offset-lg-5 text-right circle" runat="server" OnClick="btnAddOnClick" >
+                <asp:LinkButton CssClass="btn btn-primary col-lg-1 offset-lg-5 btn-sm" runat="server" OnClick="btnAddOnClick" >
                     <i class="fas fa-plus-circle"></i>
                 </asp:LinkButton>
              </div>
-        </div>
-        
-        
+            </div>      
     </section>
 </asp:Content>

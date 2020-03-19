@@ -15,6 +15,7 @@
 
     <webopt:bundlereference runat="server" path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" runat="server" media="screen" href="~/Content/font/css/all.css" />
 
 </head>
 <body>
@@ -34,11 +35,13 @@
                 <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
                 <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
                 <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
                 <asp:ScriptReference Name="WebFormsBundle" />
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-        <script src="https://kit.fontawesome.com/eb1e09fda1.js" crossorigin="anonymous"></script>
+        <!-- <script src="https://kit.fontawesome.com/eb1e09fda1.js" crossorigin="anonymous"></script>-->
+        <script src='<%=ResolveClientUrl("~/Scripts/all.js") %>' type="text/javascript"></script>
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">

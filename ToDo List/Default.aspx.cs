@@ -20,14 +20,14 @@ namespace ToDo_List
             return im.getItens();
         }
 
-        public void teste(Object sender, System.EventArgs e)
+        public void btnAddOnClick(Object sender, System.EventArgs e)
         {
             ItemManager im = new ItemManager();
             im.add(nome.Text);
             Response.Redirect("Default.aspx");
         }
 
-        public void atualizar(Object sender, EventArgs e)
+        public void btnAtualizaOnClick(Object sender, EventArgs e)
         {
             ItemManager im = new ItemManager();
             LinkButton btn = sender as LinkButton;
@@ -39,7 +39,7 @@ namespace ToDo_List
                 int idAtual = Convert.ToInt32(a);
                 if(idAtual == id)
                 {
-                    var txt = (TextBox)itens.Items[i].FindControl("atualizaNome");
+                    var txt = (TextBox)itens.Items[i].FindControl("txtAtualizaNome");
                     text = txt.Text;
                     break;
                 }
@@ -49,7 +49,7 @@ namespace ToDo_List
             Response.Redirect("Default.aspx");
 
         }
-        public void remover(Object sender, EventArgs e)
+        public void btnRemoverOnClick(Object sender, EventArgs e)
         {
             ItemManager im = new ItemManager();
             LinkButton btn = sender as LinkButton;

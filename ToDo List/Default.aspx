@@ -33,12 +33,19 @@
                 
                 </ItemTemplate>
             </asp:ListView>
-             <div class="row mt-5">
+            <div class="row mt-5">
                 <asp:TextBox ID="nome" CssClass="col-lg-6 text-center" BorderStyle="None" runat="server" Width="40" placeholder="Adicione uma nova tarefa"></asp:TextBox>
                 <asp:LinkButton CssClass="btn btn-primary col-lg-1 offset-lg-5 btn-sm" runat="server" OnClick="btnAddOnClick" >
                     <i class="fas fa-plus-circle"></i>
                 </asp:LinkButton>
-             </div>
-            </div>      
+            </div>
+            <div class="row mt-2">
+                <asp:Label ID="errorLbl" Visible="false" CssClass="col-lg-9 text-center font-weight-bold" runat="server"></asp:Label>
+                <asp:LinkButton ID="lkBtnHideWarning" Visible="false" CssClass="btn btn-warning col-lg-1 offset-lg-2 btn-sm" runat="server" OnClick="btnHideWarning" >
+                    <i class="fas fa-check-circle"></i>
+                </asp:LinkButton>
+            </div>
+            
+        </div>      
     </section>
 </asp:Content>

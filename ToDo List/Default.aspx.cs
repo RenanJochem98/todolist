@@ -22,9 +22,18 @@ namespace ToDo_List
 
         public void btnAddOnClick(Object sender, System.EventArgs e)
         {
-            ItemManager im = new ItemManager();
-            im.add(nome.Text);
-            Response.Redirect("Default.aspx");
+            try
+            {
+                ItemManager im = new ItemManager();
+                im.add(nome.Text);
+                Response.Redirect("Default.aspx");
+            }catch(Exception ex)
+            {
+                errorLbl.Text = ex.Message;
+                errorLbl.Visible = true;
+                lkBtnHideWarning.Visible = true;
+            }
+            
         }
 
         public void btnAtualizaOnClick(Object sender, EventArgs e)
@@ -56,6 +65,13 @@ namespace ToDo_List
             String id = btn.CommandName;
             im.remove(Convert.ToInt32(id));
             Response.Redirect("Default.aspx");
+        }
+
+        public void btnHideWarning(Object sender, EventArgs e)
+        {
+            errorLbl.Text = "";
+            errorLbl.Visible = false;
+            lkBtnHideWarning.Visible = false;
         }
     }
 }

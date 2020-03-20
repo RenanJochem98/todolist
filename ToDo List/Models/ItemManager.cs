@@ -16,13 +16,20 @@ namespace ToDo_List.Models
         }
         public void add(String nome)
         {
-            Item item = new Item
+            if(nome == "")
             {
-                ItemId = 1,
-                Nome = nome
-            };
-            db.Itens.Add(item);
-            db.SaveChanges();
+                throw new Exception("Não é possível adicionar uma tarefa sem nenhum texto!");
+            }
+            else
+            {
+                Item item = new Item
+                {
+                    ItemId = 1,
+                    Nome = nome
+                };
+                db.Itens.Add(item);
+                db.SaveChanges();
+            }
         }
         public void update(int id, String newName)
         {

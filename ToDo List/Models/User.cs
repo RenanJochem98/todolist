@@ -6,15 +6,18 @@ using System.Web;
 
 namespace ToDo_List.Models
 {
-    public class Item
+    public class User
     {
         [Key]
-        public int ItemId { get; set; }
+        public int UserId { get; set; }
 
         [Required, StringLength(50)]
         public string Nome { get; set; }
-
-        public int UserId { get; set; }
-
+        
+        [Required, StringLength(150)]
+        public string Email { get; set; }
+        
+        [Required, StringLength(200)]
+        public string Password { get; set; }
     }
 }

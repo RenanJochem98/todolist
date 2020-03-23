@@ -9,7 +9,13 @@ namespace ToDo_List.Models
     {
         public ItemContext() : base("Itens") { }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer<ItemContext>(null);
+            base.OnModelCreating(modelBuilder);
+        }
         public DbSet<Item> Itens { get; set; }
+        public DbSet<User> Users { get; set; }
 
     }
 }

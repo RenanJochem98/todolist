@@ -37,7 +37,7 @@ namespace ToDo_List
 
         public void BtnNewUser(Object sender, EventArgs e)
         {
-
+            Response.Redirect("NewUser.aspx");
         }
 
         public void btnHideWarning(Object sender, EventArgs e)

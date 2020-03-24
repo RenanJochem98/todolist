@@ -21,5 +21,18 @@ namespace ToDo_List.Models
             }
             return user;
         }
+
+        public void Add(String nome, String email, String senha)
+        {
+            User user = new User
+            {
+                Nome = nome,
+                Email = email,
+                Password = senha
+            };
+            db.Users.Add(user);
+            db.SaveChanges();
+            
+        }
     }
 }

@@ -14,6 +14,11 @@ namespace ToDo_List.Models
             IQueryable<User> users = db.Users;
             IQueryable<User> usersFiltred = users.Where(u => u.Email == email && u.Password == senha);
             User user = usersFiltred.FirstOrDefault();
+
+            if(user == null)
+            {
+                throw new Exception("Usuário/Senha inválidos.");
+            }
             return user;
         }
     }

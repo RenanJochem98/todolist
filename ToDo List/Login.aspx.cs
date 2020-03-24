@@ -21,14 +21,14 @@ namespace ToDo_List
             String email = txtLogin.Text;
             String senha = txtSenha.Text;
             User user = userManager.GetUser(email, senha);
-            if(user != null)
+            try
             {
                 Session["user"] = user;
                 Response.Redirect("Default.aspx");
             }
-            else
+            catch(Exception ex)
             {
-                errorLbl.Text = "Usuário/Senha inválidos.";
+                errorLbl.Text = ex.Message;
                 errorLbl.Visible = true;
                 lkBtnHideWarning.Visible = true;
             }

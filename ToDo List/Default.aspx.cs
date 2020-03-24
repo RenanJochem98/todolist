@@ -17,7 +17,8 @@ namespace ToDo_List
         public IQueryable<Item> getItens()
         {
             ItemManager im = new ItemManager();
-            return im.getItens();
+            User user = (User) Session["user"];
+            return im.GetItensFromUser(user.UserId);
         }
 
         public void btnAddOnClick(Object sender, System.EventArgs e)

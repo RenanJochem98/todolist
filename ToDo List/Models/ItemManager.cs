@@ -14,6 +14,12 @@ namespace ToDo_List.Models
             IQueryable<Item> itens = db.Itens;
             return itens;
         }
+
+        public IQueryable<Item> GetItensFromUser(int userId)
+        {
+            IQueryable<Item> itens = db.Itens.Where(i => i.UserId == userId);
+            return itens;
+        }
         public void add(String nome)
         {
             if(nome == "")

@@ -11,7 +11,7 @@
             </div>
             <div class="row p-4">
                 <i class="fas fa-key"></i>
-                <asp:TextBox ID="txtSenha" CssClass="font-weight-bold text-center"  BorderStyle="None" runat="server" placeholder="Senha" Text=""></asp:TextBox>
+                <asp:TextBox ID="txtSenha" CssClass="font-weight-bold text-center"  BorderStyle="None" runat="server" placeholder="Senha" Text="" TextMode="Password"></asp:TextBox>
             </div>
             <div class="row p-4  offset-lg-9">
                 <asp:LinkButton ID="lkBtnLogin" CssClass="btn btn-primary  px-3" runat="server" OnClick="btnDoLogin">

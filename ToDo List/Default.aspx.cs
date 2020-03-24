@@ -25,8 +25,9 @@ namespace ToDo_List
         {
             try
             {
+                User user = (User)Session["user"];
                 ItemManager im = new ItemManager();
-                im.add(nome.Text);
+                im.Add(nome.Text, user.UserId);
                 Response.Redirect("Default.aspx");
             }catch(Exception ex)
             {

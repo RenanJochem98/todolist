@@ -20,7 +20,7 @@ namespace ToDo_List.Models
             IQueryable<Item> itens = db.Itens.Where(i => i.UserId == userId);
             return itens;
         }
-        public void add(String nome)
+        public void Add(String nome, int userId)
         {
             if(nome == "")
             {
@@ -30,8 +30,8 @@ namespace ToDo_List.Models
             {
                 Item item = new Item
                 {
-                    ItemId = 1,
-                    Nome = nome
+                    Nome = nome,
+                    UserId = userId
                 };
                 db.Itens.Add(item);
                 db.SaveChanges();

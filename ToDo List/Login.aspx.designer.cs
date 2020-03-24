@@ -33,13 +33,22 @@ namespace ToDo_List
         protected global::System.Web.UI.WebControls.TextBox txtSenha;
 
         /// <summary>
-        /// Controle lkBtnLogin.
+        /// Controle btnNewUser.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lkBtnLogin;
+        protected global::System.Web.UI.WebControls.LinkButton btnNewUser;
+
+        /// <summary>
+        /// Controle btnLogin.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnLogin;
 
         /// <summary>
         /// Controle errorLbl.

@@ -35,6 +35,11 @@ namespace ToDo_List
             
         }
 
+        public void BtnNewUser(Object sender, EventArgs e)
+        {
+
+        }
+
         public void btnHideWarning(Object sender, EventArgs e)
         {
             errorLbl.Text = "";

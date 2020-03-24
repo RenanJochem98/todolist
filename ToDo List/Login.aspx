@@ -19,6 +19,12 @@
                     <span>Entrar</span>
                 </asp:LinkButton>
             </div>
+            <div class="row mt-2">
+                <asp:Label ID="errorLbl" Visible="false" CssClass="col-lg-9 text-center font-weight-bold" runat="server"></asp:Label>
+                <asp:LinkButton ID="lkBtnHideWarning" Visible="false" CssClass="btn btn-warning col-lg-1 offset-lg-2 btn-sm" runat="server" OnClick="btnHideWarning" >
+                    <i class="fas fa-check-circle"></i>
+                </asp:LinkButton>
+            </div>
             
         </div>
     </section>

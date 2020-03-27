@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using ToDo_List.Models;
@@ -17,22 +18,23 @@ namespace ToDo_List
 
         public void btnDoLogin(object sender, EventArgs e)
         {
-            UserManager userManager = new UserManager();
-            String email = txtLogin.Text;
-            String senha = txtSenha.Text;
-            User user = userManager.GetUser(email, senha);
             try
             {
+                UserManager userManager = new UserManager();
+                string email = txtLogin.Text;
+                string senha = txtSenha.Text;
+                User user = userManager.GetUser(email, senha);
+
                 Session["user"] = user;
-                Response.Redirect("Default.aspx");
+                //Response.Redirect("Default.aspx");
+                FormsAuthentication.RedirectFromLoginPage(email, false);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 errorLbl.Text = ex.Message;
                 errorLbl.Visible = true;
                 lkBtnHideWarning.Visible = true;
             }
-            
         }
 
         public void BtnNewUser(Object sender, EventArgs e)

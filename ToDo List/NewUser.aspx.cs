@@ -28,8 +28,6 @@ namespace ToDo_List
 
             userManager.Add(nome, email, senha);
             Response.Redirect("Login.aspx");
-
-
         }
     }
 }

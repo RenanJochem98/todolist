@@ -15,6 +15,15 @@ namespace ToDo_List
     {
 
         /// <summary>
+        /// Controle AuthenticatedMessagePanel.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel AuthenticatedMessagePanel;
+
+        /// <summary>
         /// Controle itens.
         /// </summary>
         /// <remarks>
@@ -49,5 +58,23 @@ namespace ToDo_List
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lkBtnHideWarning;
+
+        /// <summary>
+        /// Controle AnonymousMessagePanel.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel AnonymousMessagePanel;
+
+        /// <summary>
+        /// Controle lnkLogin.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink lnkLogin;
     }
 }

@@ -11,6 +11,16 @@ namespace ToDo_List
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Request.IsAuthenticated)
+            {
+                AuthenticatedMessagePanel.Visible = true;
+                AnonymousMessagePanel.Visible = false;
+            }
+            else
+            {
+                AuthenticatedMessagePanel.Visible = false;
+                AnonymousMessagePanel.Visible = true;
+            }
 
         }
 

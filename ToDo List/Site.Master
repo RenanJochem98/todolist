@@ -56,6 +56,7 @@
                            <%-- <asp:LinkButton  ID="btnLogOff" CssClass="btn btn-danger  px-3 offset-lg-8 col-lg-1" runat="server">
                                 <i class="fas fa-sign-out-alt"></i>
                             </asp:LinkButton>--%>
+                            <asp:TextBox runat="server" Text="<% User.Identity.Name %>"></asp:TextBox>
                             <asp:LoginStatus ID="LoginStatus1" CssClass="btn btn-danger  px-3 offset-lg-8 col-lg-1" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Login.aspx" />
                         </LoggedInTemplate>
 

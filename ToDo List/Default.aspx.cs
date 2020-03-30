@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using ToDo_List.Models;
@@ -24,20 +25,31 @@ namespace ToDo_List
 
         }
 
+        protected int GetIdFromCookie()
+        {
+            FormsIdentity ident = User.Identity as FormsIdentity;
+            FormsAuthenticationTicket ticket = ident.Ticket;
+
+            string id = ticket.UserData;
+            return Convert.ToInt32(id);
+        }
+
         public IQueryable<Item> getItens()
         {
             ItemManager im = new ItemManager();
-            User user = (User) Session["user"];
-            return im.GetItensFromUser(user.UserId);
+            //User user = (User) Session["user"];
+            int id = this.GetIdFromCookie();
+            return im.GetItensFromUser(id);
         }
 
         public void btnAddOnClick(Object sender, System.EventArgs e)
         {
             try
             {
-                User user = (User)Session["user"];
+                //User user = (User)Session["user"];
                 ItemManager im = new ItemManager();
-                im.Add(nome.Text, user.UserId);
+                int id = this.GetIdFromCookie();
+                im.Add(nome.Text,id);
                 Response.Redirect("Default.aspx");
             }catch(Exception ex)
             {

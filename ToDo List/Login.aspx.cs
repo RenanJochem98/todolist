@@ -25,9 +25,28 @@ namespace ToDo_List
                 string senha = txtSenha.Text;
                 User user = userManager.GetUser(email, senha);
 
-                Session["user"] = user;
+                //Session["user"] = user;
                 //Response.Redirect("Default.aspx");
-                FormsAuthentication.RedirectFromLoginPage(email, false);
+
+                // cria dado personalizado que sera adicionado ao cookie
+                string userDataString = user.UserId.ToString();
+                // cria o cookie que contem o ticket de autenticacao
+                HttpCookie authCookie = FormsAuthentication.GetAuthCookie(user.Nome, false);
+                // pega o ticket de autenticacao
+                FormsAuthenticationTicket ticket = FormsAuthentication.Decrypt(authCookie.Value);
+                // cria um novo tipo de autenticao, passando o valor customizado "userDataString"
+                FormsAuthenticationTicket newTicket = new FormsAuthenticationTicket(ticket.Version, ticket.Name, ticket.IssueDate, ticket.Expiration, ticket.IsPersistent, userDataString);
+
+                // atualiza o valor do cookie
+                authCookie.Value = FormsAuthentication.Encrypt(newTicket);
+                // adiciona o cookie manualmente
+                Response.Cookies.Add(authCookie);
+
+                // pega a url de redirecionamente e manda o usuario para la
+                string redirUrl = FormsAuthentication.GetRedirectUrl(user.Nome, false);
+                Response.Redirect(redirUrl);
+
+                //FormsAuthentication.RedirectFromLoginPage(user.Nome, false);
             }
             catch (Exception ex)
             {
